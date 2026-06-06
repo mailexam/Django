@@ -50,7 +50,7 @@ MAILEXAM_PASSWORD = os.environ.get("MAILEXAM_PASSWORD", "")
 MAILEXAM_PORT = int(os.environ.get("MAILEXAM_PORT", "587"))
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = f"{MAILEXAM_LOGIN}.mailexam.ru" if MAILEXAM_LOGIN else "localhost"
+EMAIL_HOST = f"{MAILEXAM_LOGIN}.mailexam.io" if MAILEXAM_LOGIN else "localhost"
 EMAIL_PORT = MAILEXAM_PORT
 EMAIL_USE_TLS = MAILEXAM_PORT in (587, 2525)
 EMAIL_HOST_USER = MAILEXAM_LOGIN

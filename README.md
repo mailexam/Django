@@ -1,6 +1,6 @@
 # Django + Mailexam
 
-Minimal [Django](https://www.djangoproject.com/) example that sends test mail through [Mailexam](https://mailexam.ru/) SMTP via `django.core.mail`.
+Minimal [Django](https://www.djangoproject.com/) example that sends test mail through [Mailexam](https://mailexam.io/) SMTP via `django.core.mail`.
 
 Based on the [Mailexam Django guide](https://wiki.mailexam.ru/en/examples/django/).
 
@@ -15,7 +15,7 @@ From your Mailexam welcome email or dashboard:
 |----------|-------------|
 | `MAILEXAM_LOGIN` | SMTP login (for example, `xxxxx`) |
 | `MAILEXAM_PASSWORD` | SMTP password (paired with the login) |
-| Host | `{MAILEXAM_LOGIN}.mailexam.ru` (built in `config/settings.py`) |
+| Host | `{MAILEXAM_LOGIN}.mailexam.io` (built in `config/settings.py`) |
 
 ## Quick start (host)
 
@@ -138,7 +138,7 @@ variables:
   MAIL_FROM: "noreply@example.test"
 ```
 
-After sending a message in a test, verify delivery via the [Mailexam API](https://mailexam.ru/api).
+After sending a message in a test, verify delivery via the [Mailexam API](https://mailexam.io/api).
 
 For unit tests without network use `EMAIL_BACKEND = "django.core.mail.backends.locmem.EmailBackend"`.
 
@@ -146,7 +146,7 @@ For unit tests without network use `EMAIL_BACKEND = "django.core.mail.backends.l
 
 **TLS or connection error**
 
-- `EMAIL_HOST` must be `{login}.mailexam.ru`, matching `EMAIL_HOST_USER` / `MAILEXAM_LOGIN`.
+- `EMAIL_HOST` must be `{login}.mailexam.io`, matching `EMAIL_HOST_USER` / `MAILEXAM_LOGIN`.
 - Login and password must come from the same Mailexam project.
 
 **Port 587**
@@ -167,4 +167,4 @@ For unit tests without network use `EMAIL_BACKEND = "django.core.mail.backends.l
 - [Mailexam Django guide (wiki)](https://wiki.mailexam.ru/en/examples/django/)
 - [Flask](https://github.com/mailexam/Flask) and [FastAPI](https://github.com/mailexam/FastAPI) — same SMTP parameters, different stack
 - [Sending email in Django](https://docs.djangoproject.com/en/stable/topics/email/)
-- [Mailexam API documentation](https://mailexam.ru/api)
+- [Mailexam API documentation](https://mailexam.io/api)

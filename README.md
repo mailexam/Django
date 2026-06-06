@@ -165,6 +165,6 @@ For unit tests without network use `EMAIL_BACKEND = "django.core.mail.backends.l
 ## See also
 
 - [Mailexam Django guide (wiki)](https://wiki.mailexam.ru/en/examples/django/)
-- [Flask reference implementation](https://github.com/mailexam/Flask) — another Python stack
+- [Flask](https://github.com/mailexam/Flask) and [FastAPI](https://github.com/mailexam/FastAPI) — same SMTP parameters, different stack
 - [Sending email in Django](https://docs.djangoproject.com/en/stable/topics/email/)
 - [Mailexam API documentation](https://mailexam.ru/api)
